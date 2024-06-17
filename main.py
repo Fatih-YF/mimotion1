@@ -54,7 +54,7 @@ def desensitize_user_name(user):
     if len(user) <= 8:
         ln = max(math.floor(len(user) / 3), 1)
         return f'{user[:ln]}***{user[-ln:]}'
-    return f'{user[:3]}****{user[-4:]}'
+    return f'{user[:6]}****{user[-4:]}'
 
 
 # 获取时间戳
